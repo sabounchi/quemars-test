@@ -12,7 +12,7 @@ public class ConsumerTester {
     }
 
     public static void main(String[] args) {
-        final QuemarsConsumer consumer = new QuemarsConsumer(new QuemarsConfig(7, "test"), 2) {
+        final QuemarsConsumer consumer = new QuemarsConsumer(new QuemarsConfig(7, "test"), 10) {
             @Override
             public void consume(byte[] bytes) {
                 System.out.println(new String(bytes));

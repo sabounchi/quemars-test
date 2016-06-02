@@ -26,7 +26,7 @@ public class ProducerTester {
     public static void main(String[] args) {
         final ProducerTester producerTester = new ProducerTester();
 
-        for (int i=0; i<10000; i++) {
+        for (int i=0; i<1000000; i++) {
 
             final int rnd = RANDOM.nextInt(3);
             final Priority priority = ((rnd==0) ? Priority.HIGH : (rnd==1 ? Priority.MEDIUM : Priority.LOW));
